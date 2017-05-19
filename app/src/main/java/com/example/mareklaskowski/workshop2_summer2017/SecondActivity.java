@@ -14,7 +14,7 @@ public class SecondActivity extends AppCompatActivity {
         //compose a reply to send back to MainActivity
         //use an Intent to store the reply
         Intent resultIntent = new Intent(); //empty for now
-        
+
         //get the text that the user entered into the text box
         EditText editText = (EditText) findViewById(R.id.editText);
         //extract the text from the editText
@@ -30,9 +30,9 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        Button a2_button = (Button) findViewById(R.id.a2_button);
+        Button ok_button = (Button) findViewById(R.id.ok_button);
         //set an onclickhandler for the button
-        a2_button.setOnClickListener(new View.OnClickListener() {
+        ok_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ok_button_click_handler();
