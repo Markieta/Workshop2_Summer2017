@@ -23,6 +23,8 @@ public class SecondActivity extends AppCompatActivity {
         resultIntent.putExtra("message", message);
         //this next line is only needed if you are returning a result to the calling activity
         setResult(Activity.RESULT_OK, resultIntent);
+        //end SecondActivity
+        finish();
     }
 
     @Override

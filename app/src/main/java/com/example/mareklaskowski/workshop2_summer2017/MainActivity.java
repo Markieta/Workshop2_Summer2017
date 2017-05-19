@@ -1,10 +1,13 @@
 package com.example.mareklaskowski.workshop2_summer2017;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -57,5 +60,30 @@ public class MainActivity extends AppCompatActivity {
                 a3_button_click_handler();
             }
         });
+    }
+
+    /*onActivityResult will be called by the Android framework once the activity we started
+    with startActivityForResult completes. We are passed the same request code that we passed to
+    startActivityForResult and a resultcode that indicates whether the user completed the ACtivity
+    or pressed Back to cancel
+     */
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        //handler
+        if (requestCode == 1){
+            //check to see whether the user pressed OK or hit the back button
+            if(resultCode == Activity.RESULT_OK){
+                //extract the message from the Intent that was returned (data)
+                String result = data.getStringExtra("message");
+                //set the textView's string to display the message
+                TextView text = (TextView) findViewById(R.id.textView1);
+                text.setText(result);
+            }
+        }else{
+            Log.e("lab2", "SOMETHING WENT VERY WRONG");
+        }
     }
 }
