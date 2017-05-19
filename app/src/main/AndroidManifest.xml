@@ -11,7 +11,6 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -20,13 +19,19 @@
         our app
         -->
         <activity android:name=".SecondActivity">
-
             <!-- xml tags in here describe the second activity -->
+            <!-- we need an intent filter in order for SecondActivity to receive or handle our implicit intent -->
+            <intent-filter>
+                <!-- every intent filter needs an action and a category -->
+                <action android:name="com.seneca.lab2b.marek"/>
+                <!-- for our custom implict intents, the category is always DEFAULT -->
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </activity>
         <!-- third activity element below -->
         <activity android:name=".ThirdActivity">
 
-            
+
         </activity>
     </application>
 
