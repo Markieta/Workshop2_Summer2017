@@ -17,7 +17,19 @@ public class MainActivity extends AppCompatActivity {
         //1. create an Intent (in this case implicit)
         Intent a2Intent = new Intent("com.seneca.lab2b.marek"); //TODO: change to your name!
         //2. use the Intent to start the SecondActivity
-        startActivity(a2Intent);
+        //startActivityForResult expects both an Intent and a request code so that you can
+        //match up the request with an eventual reply
+        startActivityForResult(a2Intent, 1);
+    }
+
+    private void a3_button_click_handler(){
+        //display a toast for debugging - show the user...
+        Toast.makeText(this, "a3 button was clicked", Toast.LENGTH_LONG).show();
+        //use an explicit intent to launch our ThirdActivity
+        //1. create an Intent (in this case explicit)
+        Intent a3Intent = new Intent(this, ThirdActivity.class);
+        //2. use the Intent to start the ThirdActivity
+        startActivity(a3Intent);
     }
 
     @Override
@@ -33,6 +45,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 a2_button_click_handler();
+            }
+        });
+
+        //set a button handler for a3_button
+        Button a3_button = (Button) findViewById(R.id.a3_button);
+        //set an onclickhandler for the button
+        a3_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                a3_button_click_handler();
             }
         });
     }
