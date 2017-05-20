@@ -7,4 +7,9 @@
     <string name="a2_toast_message">a2 button was clicked</string>
     <string name="a3_toast_message">a3 button was clicked</string>
     <string name="a2_intent">com.seneca.lab2b.cmarkieta</string>
+    <string name="fullname">Christopher Markieta</string>
+    <string name="greeting">Good morning, Android!</string>
+    <string name="greeting_text_view">GreetingTextView</string>
+    <string name="name_text_view">NameTextView</string>
+    <string name="student_id_text_view">StudentIdTextView</string>
 </resources>

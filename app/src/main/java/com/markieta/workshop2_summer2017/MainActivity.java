@@ -23,6 +23,15 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, R.string.a3_toast_message, Toast.LENGTH_LONG).show();
 
         Intent a3Intent = new Intent(this, ThirdActivity.class);
+
+        Bundle student = new Bundle();
+        student.putString("My Name", getString(R.string.fullname));
+        student.putInt("student id", 80124);
+
+        a3Intent.putExtra("greeting", getString(R.string.greeting));
+        a3Intent.putExtra("number", 1337);
+        a3Intent.putExtra("student", student);
+
         startActivity(a3Intent);
     }
 
