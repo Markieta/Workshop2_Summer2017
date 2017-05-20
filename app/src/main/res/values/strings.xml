@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">your name here</string>
+    <string name="edit_text_hint">Enter text here</string>
+    <string name="ok_button_text">OK</string>
 </resources>
