@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "a2 button was clicked", Toast.LENGTH_LONG).show();
         //use an intent to launch our SecondActivity
         //1. create an Intent (in this case implicit)
-        Intent a2Intent = new Intent("com.seneca.lab2b.marek"); //TODO: change to your name!
+        Intent a2Intent = new Intent("com.seneca.lab2b.cmarkieta");
         //2. use the Intent to start the SecondActivity
         //startActivityForResult expects both an Intent and a request code so that you can
         //match up the request with an eventual reply
