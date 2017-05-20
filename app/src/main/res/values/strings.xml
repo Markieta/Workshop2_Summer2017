@@ -2,4 +2,6 @@
     <string name="app_name">cmarkieta</string>
     <string name="edit_text_hint">Enter text here</string>
     <string name="ok_button_text">OK</string>
+    <string name="a2_button_text">Launch Second Activity</string>
+    <string name="a3_button_text">Launch Third Activity</string>
 </resources>

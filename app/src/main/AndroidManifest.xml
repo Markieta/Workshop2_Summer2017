@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mareklaskowski.workshop2_summer2017">
+    package="com.markieta.workshop2_summer2017">
 
     <application
         android:allowBackup="true"
