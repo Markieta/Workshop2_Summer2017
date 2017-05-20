@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
                 String result = data.getStringExtra("message");
                 TextView text = (TextView) findViewById(R.id.textView1);
                 text.setText(result);
+
+                Toast.makeText(this, result, Toast.LENGTH_LONG).show();
             }
         }else{
             Log.e("lab2", "SOMETHING WENT VERY WRONG");
