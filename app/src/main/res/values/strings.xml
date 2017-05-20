@@ -4,4 +4,7 @@
     <string name="ok_button_text">OK</string>
     <string name="a2_button_text">Launch Second Activity</string>
     <string name="a3_button_text">Launch Third Activity</string>
+    <string name="a2_toast_message">a2 button was clicked</string>
+    <string name="a3_toast_message">a3 button was clicked</string>
+    <string name="a2_intent">com.seneca.lab2b.cmarkieta</string>
 </resources>

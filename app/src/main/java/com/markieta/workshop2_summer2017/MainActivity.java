@@ -13,14 +13,14 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private void a2_button_click_handler(){
-        Toast.makeText(this, "a2 button was clicked", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, R.string.a2_toast_message, Toast.LENGTH_LONG).show();
 
-        Intent a2Intent = new Intent("com.seneca.lab2b.cmarkieta");
+        Intent a2Intent = new Intent(getString(R.string.a2_intent));
         startActivityForResult(a2Intent, 1);
     }
 
     private void a3_button_click_handler(){
-        Toast.makeText(this, "a3 button was clicked", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, R.string.a3_toast_message, Toast.LENGTH_LONG).show();
 
         Intent a3Intent = new Intent(this, ThirdActivity.class);
         startActivity(a3Intent);
